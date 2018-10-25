@@ -6,8 +6,9 @@
     border: 0;
 }
 
-p {
+h1, p {
     text-align: justify;
+    width: 100%;
 }
 
 .contenedor {
