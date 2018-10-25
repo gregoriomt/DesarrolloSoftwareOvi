@@ -6,6 +6,10 @@
     border: 0;
 }
 
+p {
+    text-align: justify;
+}
+
 .contenedor {
     max-width: 960px;
     margin-left:auto;
@@ -155,8 +159,27 @@
     cursor: pointer;
 }
 
+.contenido {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    /*border: 1px solid #808080;*/
+    display: flex;
+}
+
+.content-left {
+    width: 30%;
+    padding: 5px;
+    border: 1px solid #808080;
+}
+
+.content-right {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #808080;
+}
+
 .twitter-unad{
-    width: 35%;
+    width: 100%;
 }
 
 .twitter-unad .title-tw {
@@ -174,12 +197,6 @@
 .twits-unad {
     height: 300px;
     overflow-y: scroll;
-}
-
-.contenido {
-    margin-bottom: 3px;
-    margin-top: 3px;
-    border: 1px solid #808080;
 }
 
 .contador {
