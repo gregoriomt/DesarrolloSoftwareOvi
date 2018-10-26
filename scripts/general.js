@@ -4,7 +4,7 @@ var ObjControlador = {
     },
     FechaActual: function () {
     	const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const d = new Date(result);
+        const d = new Date();
         var fechaCompleta = d.toLocaleDateString("es-ES", options);
     	$("#fechaActual").text(fechaCompleta);
     }
