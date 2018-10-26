@@ -1,2 +1,15 @@
-var d = new Date();
-document.querySelector("#fechaActual").innerHTML = d.toLocaleDateString();
+var ObjControlador = {
+	onReady: function () {
+		ObjControlador.FechaActual();
+    },
+    FechaActual: function () {
+    	const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const d = new Date(result);
+        var fechaCompleta = d.toLocaleDateString("es-ES", options);
+    	$("#fechaActual").text(fechaCompleta);
+    }
+}
+
+$(function () {
+    ObjControlador.onReady();
+});
