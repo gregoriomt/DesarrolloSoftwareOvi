@@ -6,11 +6,18 @@
     border: 0;
 }
 
+h1, p {
+    text-align: justify;
+    width: 100%;
+}
+
 .contenedor {
     max-width: 960px;
+    /*max-width: 80%;*/
     margin-left:auto;
     margin-right:auto;
     height:auto;
+    position: relative;
 }
 
 .cabecera {
@@ -62,11 +69,11 @@
     border-bottom: 3px solid #09529c;
     font-family: Raleway, sans-serif;
     line-height: 1;
-    display: flex;
 }
 
 .menu ul {
     background: #ffffff;
+    float: left;
 }
 
 .menu > ul > li {
@@ -143,9 +150,9 @@
 
 
 .social {
-    right: 0;
-    position: absolute;
+    position: relative;
     padding-top: 10px;
+    float: right;
 }
 
 .social img {
@@ -155,8 +162,32 @@
     cursor: pointer;
 }
 
+.contenido {
+    margin-bottom: 3px;
+    margin-top: 3px;
+    /*border: 1px solid #808080;*/
+    display: inline-flex;
+    margin: 2px;
+}
+
+.content-left {
+    width: 30%;
+    margin: 2px;
+    /*border: 1px solid #808080;*/
+    position: relative;
+}
+
+.content-right {
+    width: 70%;
+    margin: 2px;
+    /*border: 1px solid #808080;*/
+    position: relative;
+    margin-left: 10px;
+}
+
 .twitter-unad{
-    width: 35%;
+    width: 99%;
+    border: 2px solid #617e07;
 }
 
 .twitter-unad .title-tw {
@@ -176,30 +207,42 @@
     overflow-y: scroll;
 }
 
-.contenido {
-    margin-bottom: 3px;
-    margin-top: 3px;
-    border: 1px solid #808080;
+.contador {
+    width: auto;
+    height: 35px;
+    padding-top: 5px;
 }
 
-footer {
+.contador b {
+    float: left;
+    margin-top: 8px;
+
+}
+
+.contador a {
+    float: left;
+    margin-left: 3px;
+    line-height: 3;
+    text-decoration: none;
+    color: #444444;
+}
+
+.footer {
     background-color: #09529c;
     border-top: 3px solid #e16a12;
     height:100px;
     position: relative;
     color: #ffffff;
-    right: 0;
     bottom: 0;
-    left: 0;
     padding: 1em;
 }
 
-footer .logo {
+.footer .logo {
     float:left;
     margin: 0px 10px 0px 0px;
 }
 
-footer .autor {
+.footer .autor {
     float: right;
     text-align:right;
     position:relative;
